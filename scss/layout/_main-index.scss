@@ -1,0 +1,27 @@
+.main-index{
+    .hero-main{
+        position: relative;
+        background-image: url("../../assets/hero-main-img.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18.75rem 0 18.75rem 0;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, #0e0e0e, transparent 30%),
+                        linear-gradient(to bottom, #0e0e0e, transparent 30%);
+        }
+        h1{
+            margin: 0;
+            font-family: "Cinzel";
+            font-size: 3.75rem;
+            color: white;
+        }
+    }
+
+}

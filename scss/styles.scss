@@ -6,15 +6,18 @@
 
 
 // Importando utilidades
-
+@import "./utilities/mixins";
+@import "./utilities/variables";
 
 // Importando base
-
+@import "./base/reset";
+@import "./base/typography";
 
 // Importando layout
-
+@import "./layout/header";
+@import "./layout/main-index";
 
 // Importando componentes
-
+@import "./components/navbar";
 
 // Importando media

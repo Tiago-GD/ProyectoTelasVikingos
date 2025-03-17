@@ -1,0 +1,24 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 4;
+    grid-row: 1/2;
+    padding: 0;
+    ul{
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        li{
+            @include flex(row, space-between, center, 0);
+            a{
+                font-family: "BebasNeue";
+                font-size: 1.875rem;
+                color: white;
+                img{
+                    width: 9.375rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

@@ -9274,3 +9274,106 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url("../../assets/fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("../../assets/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+header {
+  padding: 0 4.6875rem 0 4.6875rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 0;
+  row-gap: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E0E0E; }
+  header .navbar-2 {
+    display: none; }
+  header .locationbtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: flex-end;
+    background-color: transparent;
+    border: 0; }
+    header .locationbtn img {
+      width: 3.75rem; }
+    header .locationbtn a {
+      font-family: "BebasNeue";
+      font-size: 1.5625rem;
+      color: white; }
+
+.main-index .hero-main {
+  position: relative;
+  background-image: url("../../assets/hero-main-img.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18.75rem 0 18.75rem 0; }
+  .main-index .hero-main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #0e0e0e, transparent 30%), linear-gradient(to bottom, #0e0e0e, transparent 30%); }
+  .main-index .hero-main h1, .main-index .hero-main .h1 {
+    margin: 0;
+    font-family: "Cinzel";
+    font-size: 3.75rem;
+    color: white; }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / 4;
+  grid-row: 1/2;
+  padding: 0; }
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    width: 60%; }
+    .navbar ul li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0; }
+      .navbar ul li a {
+        font-family: "BebasNeue";
+        font-size: 1.875rem;
+        color: white; }
+        .navbar ul li a img {
+          width: 9.375rem;
+          height: auto; }

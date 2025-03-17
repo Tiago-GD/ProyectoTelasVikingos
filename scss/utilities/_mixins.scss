@@ -1,0 +1,43 @@
+@mixin flex(
+    $direction: row, 
+    $justify: flex-start, 
+    $align: stretch, 
+    $gap: 0
+) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid(
+    $templatecolumns: auto, 
+    $templaterows: auto,
+    $columngap: 0, 
+    $rowgap: 0,
+    $justify: stretch, 
+    $align: stretch
+) {
+    display: grid;
+    grid-template-columns: $templatecolumns;
+    grid-template-rows: $templaterows;
+    column-gap: $columngap;
+    row-gap: $rowgap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid-placement(
+    $rowstart: auto, 
+    $rowend: auto, 
+    $columnstart: auto, 
+    $columnend: auto, 
+    $align: auto, 
+    $justify: auto
+) {
+    grid-row: #{$rowstart} / #{$rowend};
+    grid-column: #{$columnstart} / #{$columnend};
+    align-self: $align;
+    justify-self: $justify;
+}
