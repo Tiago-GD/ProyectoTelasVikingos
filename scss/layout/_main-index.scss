@@ -1,4 +1,10 @@
-.main-index{
+
+.main-index{  
+    &::before {
+        content: "";
+        display: block;
+        height: 9.4494rem;
+    }  
     .hero-main{
         position: relative;
         background-image: url("../../assets/hero-main-img.jpg");
@@ -111,6 +117,7 @@
         @include flex(row, center, center, 0);
         .desc{
             @include flex(column, center, center, .9375rem);
+            width: 37.5rem;
             img{
                 width: 10.9375rem;
                 height: auto;

@@ -1,0 +1,47 @@
+.main-productos{
+    &::before {
+        content: "";
+        display: block;
+        height: 9.4494rem;
+    }
+    
+    .hero-productos{
+        position: relative;
+        background-image: url("../../assets/prodimg.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12.5rem 0 12.5rem 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, #0e0e0e, transparent 20%),
+                        linear-gradient(to bottom, #0e0e0e, transparent 20%);
+            z-index: 2;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1
+        }
+
+        * {
+            position: relative;
+            z-index: 3;
+        }
+
+        h1{
+            margin: 0;
+            font-family: "Cinzel";
+            font-size: 3.75rem;
+            color: white;
+        }
+    }
+}
